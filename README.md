@@ -1,4 +1,4 @@
-# abnormal-EMR-cluster-monitor
+# Lambda function for monitoring abnormal EMR clusters
 
 When starting an EMR cluster, it will take time for the cluster to booting up and setup all software that needed(Hadoop, Hive, Pig...). Sometime, the cluster failed to booting up due to bootstrap failure. 
 Sometime a job run into an infinity loop and the cluster can not stop itself. The cluster's status remains “Running” but actually it will be like that forever you just throw the money out of the window!
