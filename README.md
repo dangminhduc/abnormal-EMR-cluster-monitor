@@ -7,7 +7,7 @@ Sometime a job run into an infinity loop and the cluster can not stop itself. Th
 The job is recoverable but I need something to detect and notify me whenever a cluster is getting errors and did not start successfully. So I decide to use CloudWatch Event rule + Lambda to create a cron job which check EMR clusters frequently.
 
 In Lambda management console, create a new Lambda function.
-For runtime enviroment, select Python 3.6
+For runtime enviroment, select Python 3.6.
 Remember to create a role from IAM console to grant permission for the function 
 ![alt text](https://imgur.com/aWkShdI.png)
 The function will need 2 roles below
