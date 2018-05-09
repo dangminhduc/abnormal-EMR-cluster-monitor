@@ -1,5 +1,4 @@
 # abnormal-EMR-cluster-monitor
-# **Detecting failed-to-start EMR cluster**
 
 When starting an EMR cluster, it will take time for the cluster to booting up and setup all software that needed(Hadoop, Hive, Pig...). Sometime, the cluster failed to booting up due to bootstrap failure. 
 Sometime a job run into an infinity loop and the cluster can not stop itself. The cluster's status remains “Running” but actually it will be like that forever you just throw the money out of the window!
@@ -8,7 +7,8 @@ The job is recoverable but I need something to detect and notify me whenever a c
 
 In Lambda management console, create a new Lambda function.
 For runtime enviroment, select Python 3.6.
-Remember to create a role from IAM console to grant permission for the function 
+
+Remember to create a role from IAM console to grant permission for the function.
 ![alt text](https://imgur.com/aWkShdI.png)
 The function will need 2 roles below
 
