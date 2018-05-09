@@ -3,7 +3,7 @@
 When starting an EMR cluster, it will take time for the cluster to booting up and setup all software that needed(Hadoop, Hive, Pig...). Sometime, the cluster failed to booting up due to bootstrap failure. 
 Sometime a job run into an infinity loop and the cluster can not stop itself. The cluster's status remains “Running” but actually it will be like that forever you just throw the money out of the window!
 ![alt text](https://i.imgur.com/PsCjvjV.png)
-The job is recoverable but I need something to detect and notify me whenever a cluster is getting errors and did not start successfully. So I decide to use CloudWatch Event rule + Lambda to create a cron job which check EMR clusters frequently.
+The job is recoverable but I need something to detect and notify me whenever a cluster is getting errors and did not start successfully. So I decided to use CloudWatch Event rule + Lambda to create a cron job which check EMR clusters frequently.
 
 In Lambda management console, create a new Lambda function.
 For runtime enviroment, select Python 3.6.
